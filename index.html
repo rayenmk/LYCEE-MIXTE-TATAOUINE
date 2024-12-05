@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institut de Tataouine</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- Page principale -->
+    <header class="header">
+        <h1>Lycee Tataouine</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#schedule">Emploi du temps</a></li>
+                <li><a href="#library">Bibliothèque numérique</a></li>
+                <li><a href="#feedback">Donner votre avis</a></li>
+                <li><a href="#login">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section Emploi du temps -->
+        <section id="schedule" class="card">
+            <h2>Télécharger l'emploi du temps</h2>
+            <p>Vous pouvez télécharger votre emploi du temps au format PDF :</p>
+            <a href="schedule.pdf" download class="button">Télécharger</a>
+        </section>
+
+        <!-- Section Bibliothèque numérique -->
+        <section id="library" class="card">
+            <h2>Bibliothèque numérique</h2>
+            <p>Recherchez les livres électroniques disponibles :</p>
+            <form>
+                <input type="text" placeholder="Entrez le nom du livre..." required>
+                <button type="submit" class="button">Rechercher</button>
+            </form>
+            <ul id="book-list">
+                <li>Livre 1 - <a href="book1.pdf" download>Télécharger</a></li>
+                <li>Livre 2 - <a href="book2.pdf" download>Télécharger</a></li>
+            </ul>
+        </section>
+
+        <!-- Section Donner votre avis -->
+        <section id="feedback" class="card">
+            <h2>Donner votre avis</h2>
+            <form>
+                <textarea placeholder="Écrivez votre avis ici..." required></textarea>
+                <button type="submit" class="button">Envoyer</button>
+            </form>
+        </section>
+
+        <!-- Section Connexion -->
+        <section id="login" class="card">
+            <h2>Connexion</h2>
+            <form>
+                <input type="email" placeholder="Adresse e-mail" required>
+                <input type="password" placeholder="Mot de passe" required>
+                <button type="submit" class="button">Se connecter</button>
+            </form>
+            <p>Pas encore de compte ? <a href="#register">Créer un compte</a></p>
+        </section>
+
+        <!-- Section Créer un compte -->
+        <section id="register" class="card">
+            <h2>Créer un compte</h2>
+            <form>
+                <input type="text" placeholder="Nom complet" required>
+                <input type="email" placeholder="Adresse e-mail" required>
+                <input type="password" placeholder="Mot de passe" required>
+                <button type="submit" class="button">S'inscrire</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lycee Tataouine. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
